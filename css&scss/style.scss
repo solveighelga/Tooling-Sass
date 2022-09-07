@@ -1,0 +1,84 @@
+// Partial files - Always on the top of your scss-page!
+@use 'padding';
+
+// Variables
+$main-text: #fff;
+$main-font: "monserrat", sans-serif;
+$sass-pink: #bf4080;
+$h-size: 24px;
+$p-size: 18px;
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;  
+}
+
+// Nesting: similar to html (keep it simple)
+.main-nav {
+    background-color: $sass-pink;
+    cursor: pointer;
+    ul {
+        width: 100%;
+        font-family: $main-font;
+        padding: 10px;
+        text-align: center;
+    }
+    a {
+        display: inline-block;
+        text-align: center;
+        width: 10%;
+        padding: 20px;
+        color: $main-text;
+        text-decoration: none;
+    }
+    a:hover {
+        background-color: $main-text;
+        color: $sass-pink;
+        border-radius: 60px;
+    }  
+}
+
+main {
+padding: 20px;
+} 
+
+h1 {
+    font-size: $h-size;
+    color: $sass-pink;
+    font-family: $main-font;
+}
+
+// Mixins I can use more than once in my CSS. Here is a circle that is not with specific settings so I can change it.
+@mixin circle ($width, $height, $color) {
+    width: $width;
+    height: $height;
+    background: $color;
+    border-radius: 50%; // same border radius for all circles.
+}
+
+h2 {
+    text-align: center;
+    padding-top: 80px;
+    @extend h1; // here I used extend so my h1 and h2 have the same settings.
+}
+
+p {
+    text-align: center;
+    font-size: $p-size;
+    padding-left: 20%;
+    padding-right: 20%;
+    img {
+        display: block;
+        padding: 20px;
+        margin: auto;
+    }
+}
+
+// Mixin was used here to make a circle around my text.
+footer {
+    @include circle (200px, 100px, $sass-pink);
+    color: $main-text;
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 50px;
+}

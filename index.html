@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="css&scss/style.css">
+    <title>Sass</title>
+</head>
+<body>
+    <!--Comment on header here: I added a navbar. I made an Id for each element in my main to link them together-->
+    <header>
+        <nav class="main-nav">
+                <ul>
+                    <a href="#variables">Variables</a>
+                    <a href="#nesting">Nesting</a>
+                    <a href="#partials">Partials</a>
+                    <a href="#mixin">Mixins</a>
+                    <a href="#extend">Extend/Inheritance</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Comment on main here: I added a h1 and h2. Eacb h2 has a paragraph and image-->
+    <main>
+        <h1>What is SASS?</h1>
+            <h2 id="variables">Variables</h2>
+                <p>Variables use the $ sign in front of the variable. This can make changes easier later on in your code because you just have to change it in one place and it automatically changes it for you in your css. 
+                    <img src="images/variables.png" alt="">
+                </p>
+            <h2 id="nesting">Nesting</h2>
+                <p>With this feature you can nest your css like you do in Html. Great way to see what goes together.
+                    <img src="images/nesting.png" alt="">
+                </p>
+            <h2 id="partials">Partials</h2>
+                <p>You can make a partial file for some of your scss to try and keep your style sheet clean and simple. To connect your partial to your main scss use @use 'file name'
+                    <img src="images/partial.png" alt="">
+                    <img src="images/partial-use.png" alt="">
+                </p>
+            <h2 id="mixin">Mixins</h2>
+                <p>This is a really cool feature that lets you group together css that you want to reuse throughout your website. Make a @mixin with appropriate name.
+                    <img src="images/mixin.png" alt="">
+                    <p>Here you can see how I used it with @include
+                        <img src="images/mixin-include.png" alt="">
+                    </p>
+                </p>
+            <h2 id="extend">Extend/Inheritance</h2>
+                <p>If you want to inherit or extend attributes from another class @extend is a great way to do that without having to write everything again.
+                    <img src="images/extend.png" alt="">
+                </p>
+        <!--Comment on footer here: text to use in my css related to mixin-->
+        <footer>Made with mixin</footer>
+    </main>
+</body>
+</html>
