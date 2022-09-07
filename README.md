@@ -1,6 +1,6 @@
 # Tooling-Sass
 ## I used https://sass-lang.com/guide as my main resource
-### There I followed the order in which they explained SASS.
+### --> There I followed the order in which they explained SASS.
 ### Step 1: I started by writing my html and what I wanted to have on my website. 
 ### Step 2: I made my navbar and used 'nesting' and some 'variables'. More variables were created as I worked on my project. 
 ### Step 3: I worked on my main and included everything I had learned about Sass (tried to keep it simple as you can see from the website). 
